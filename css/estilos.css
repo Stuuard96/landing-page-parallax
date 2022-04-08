@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
 html {
   box-sizing: border-box;
   font-size: 62.5%; /*1 rem = 10px*/
@@ -7,6 +9,11 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
 }
 
 h1,
@@ -37,4 +44,115 @@ img {
 
 figure {
   margin: 0;
+}
+
+.btn__registrarse{
+  padding: 1.4rem 5rem;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.btn__registrarse:hover{
+  background-color: #69f1a1;
+  color: #000;
+  transition: background, color, .3s;
+}
+
+.btn__read{
+  padding: 1.4rem 5rem;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+  font-size: 1.6rem;
+  cursor: pointer;
+} 
+
+.btn__read:hover{
+  background: #E8E8E8;
+  transition: background, color, .3s;
+}
+
+/*-------------------------Header---------------------------*/
+header{
+  height: 12rem;
+}
+
+.container__header{
+  max-width: 120rem;
+  height: inherit;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  width: 18rem;
+}
+
+.menu nav ul{
+  display: flex;
+}
+
+.menu nav ul li{
+  padding: 0 2rem;
+}
+
+.menu nav ul li a{
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #000;
+  
+}
+
+.menu nav ul li a:hover{
+  opacity: 0.6;
+  transition: opacity .3s;
+}
+
+/*-----------------------Portada-cover----------------------*/
+main{
+  max-width: 1200px;
+  margin: 0 auto;
+  height: calc(100vh + 80rem);
+}
+.cover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.cover__information{
+  width: 50%;
+  padding: 0 2rem;
+}
+
+.cover__information h1{
+  font-size: 5rem;
+}
+
+.cover__information p{
+  font-size: 1.8rem;
+  padding-top: 4rem;
+}
+
+.cover__buttons{
+  display: flex;
+  padding-top: 4rem;
+  gap: 1rem;
+}
+
+
+.cover__media{
+  width: 50%;
+}
+
+.cover__media video{
+  width: 100%;
 }
