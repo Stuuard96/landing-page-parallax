@@ -36,12 +36,6 @@ a {
   text-decoration: none;
 }
 
-/* imagenes fluidas */
-img {
-  max-width: 100%;
-  height: auto;  
-}
-
 figure {
   margin: 0;
 }
@@ -155,4 +149,67 @@ main{
 
 .cover__media video{
   width: 100%;
+}
+
+/*--------------------------BANNER--------------------------*/
+.container__banner{
+  margin-top: 8rem;
+}
+
+.banner{
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  background-color: #121214;
+  position: relative;
+}
+
+.banner__icon--heart{
+  width: 35%;
+  height: 100%;
+}
+
+.icon__heart{
+  width: 40rem;
+  margin-top: -2rem;
+  position: relative;
+  filter: drop-shadow(-4rem 0 3rem rgba(0,0,0,0.5));
+}
+
+.banner__text{
+  width: 55%;
+  padding: 3rem;
+}
+
+.banner__text h2{
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 300;
+}
+
+.banner__text a{
+  display: block;
+  padding-top: 2rem;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.banner__text a:hover{
+  color: #69f1a1;
+  transition: color .3s;
+}
+
+.banner__icon--fire{
+  height: 100%;
+  position: absolute;
+  right: 4rem;
+  overflow: hidden;
+}
+
+.icon__fire{
+  width: 30rem;
+  position: relative;
+  margin-top: -10rem;
+  opacity: 0.6;
 }
