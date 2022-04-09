@@ -76,11 +76,16 @@ header{
   height: 12rem;
 }
 
+#icon__menu{
+  display: none;
+}
+
 .container__header{
   max-width: 120rem;
   height: inherit;
   margin: auto;
   display: flex;
+  padding: 0 3.1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -91,10 +96,7 @@ header{
 
 .menu nav ul{
   display: flex;
-}
-
-.menu nav ul li{
-  padding: 0 2rem;
+  gap: 40px;
 }
 
 .menu nav ul li a{
@@ -113,6 +115,7 @@ header{
 main{
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 3.1rem;
   height: calc(100vh + 80rem);
 }
 .cover{
@@ -124,7 +127,6 @@ main{
 
 .cover__information{
   width: 50%;
-  padding: 0 2rem;
 }
 
 .cover__information h1{
@@ -177,7 +179,7 @@ main{
 }
 
 .banner__text{
-  width: 55%;
+  width: 56%;
   padding: 3rem;
 }
 
@@ -212,4 +214,103 @@ main{
   position: relative;
   margin-top: -10rem;
   opacity: 0.6;
+}
+
+@media(max-width: 1024px){
+  .container__header, main{
+    padding: 0 2rem;
+  }
+  
+  #icon__menu{
+    display: block;
+    cursor: pointer;
+    font-size: 2.4rem;
+  }
+
+  .header__register{
+    display: none;
+  }
+
+  .menu{
+    height: 0;
+    position: absolute;
+    right: 20px;
+    top: 80px;
+    overflow: hidden;
+    z-index: 10;
+    box-shadow: 0px 0px 30px -20px rgba(0,0,0,0.5);
+    transition: all .5s;
+  }
+
+  .menu nav ul{
+    flex-direction: column;
+    padding: 3rem;
+    gap: 20px;
+    background-color: #fff;
+  }
+
+  /*Clase manipulada por Js*/
+  .mostrar__menu{
+    height: 232px;
+  }
+
+  .cover__information h1{
+    font-size: 4rem;
+  }
+
+  .cover__information p{
+    font-size: 1.6rem;
+  }
+  
+  .banner__text{
+    padding: 3rem 0;
+  }
+
+  .banner__text h2{
+    font-size: 2.2rem;
+  }
+
+  .icon__heart{
+    left: -50px;
+  }
+
+  .banner__icon--fire{
+    right: -20px;
+  }
+}
+
+@media (max-width: 900px){
+  .cover__information{
+      width: 100%;
+  }
+
+  .cover{
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .banner{
+      width: 100%;
+      height: auto;
+      flex-wrap: wrap;
+  }
+
+  .icon__fire{
+    width: 25rem;
+  }
+
+  .icon__heart{
+    width: 30rem;
+    margin-top: 20px;
+    padding-left: 5rem;
+  }
+  
+  .banner__icon--heart{
+    width: 10%;
+  }
+  .banner__text{
+    width: 70%;
+    margin-top: 5rem;
+    padding-left: 14rem;
+  } 
 }
